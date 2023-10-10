@@ -1,0 +1,91 @@
+:root{
+    --cor-primária: #43c7b1;
+    --cor-secundária: #3e76ee;
+    --cor-fundo: #2f83f0;
+    --cor-texto: #160d0d;
+    
+    
+    }
+    body{
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        background-color: var(--cor-primária);
+        color: whitesmoke;
+        margin: 20px;
+        padding: 20px;
+        word-spacing: 150px;
+    }
+
+    .logo img{
+        height: auto;
+        width: 100px;
+        margin: 100px;
+        object-fit: fill;
+    }
+    
+    
+    nav ul{
+        list-style-type: none;
+        padding: 15px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    nav ul li{
+        display:inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: color 0.3;
+    }
+    
+    nav ul li a:hover{
+     color: var(--cor-secundária)
+    }
+    
+    .intro{
+        text-align: center;
+        padding: 20px 0;
+        background: linear-gradient(to bottom, #000dbf, #0f1bc0c4 #212bb8);
+        color: whitesmoke
+    }
+    
+    .intro h1{
+        font-size: 8em;
+    }
+    
+    .Comentarios{
+        background-color: whitesmoke;
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    .Comentario{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    
+    .Comentario img {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        border: 50%;
+        transition: transform 0.3s;
+    }
+    
+    .Comentario img:hover{
+        transform: scale(1.2);
+    }
+
+    footer{
+        text-align: center;
+    }
