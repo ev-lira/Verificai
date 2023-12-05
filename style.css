@@ -1,91 +1,136 @@
-:root{
-    --cor-primária: #43c7b1;
-    --cor-secundária: #3e76ee;
+:root {
+    --cor-primaria: #43c7b1;
+    --cor-secundaria: #3e76ee;
     --cor-fundo: #2f83f0;
     --cor-texto: #160d0d;
-    
-    
-    }
-    body{
-        background-color: var(--cor-fundo);
-        color: var(--cor-texto);
-        margin: 0;
-        padding: 0;
-    }
-    
-    header{
-        background-color: var(--cor-primária);
-        color: whitesmoke;
-        margin: 20px;
-        padding: 20px;
-        word-spacing: 150px;
-    }
+}
 
-    .logo img{
-        height: auto;
-        width: 100px;
-        margin: 100px;
-        object-fit: fill;
-    }
-    
-    
-    nav ul{
-        list-style-type: none;
-        padding: 15px;
-        margin: 0;
-        text-align: center;
-    }
-    
-    nav ul li{
-        display:inline;
-        margin-right: 20px;
-    }
-    
-    nav ul li a{
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        transition: color 0.3;
-    }
-    
-    nav ul li a:hover{
-     color: var(--cor-secundária)
-    }
-    
-    .intro{
-        text-align: center;
-        padding: 20px 0;
-        background: linear-gradient(to bottom, #000dbf, #0f1bc0c4 #212bb8);
-        color: whitesmoke
-    }
-    
-    .intro h1{
-        font-size: 8em;
-    }
-    
-    .Comentarios{
-        background-color: whitesmoke;
-        padding: 30px 0;
-        text-align: center;
-    }
-    
-    .Comentario{
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-    
-    .Comentario img {
-        width: 60px;
-        height: 60px;
-        margin: 10px;
-        border: 50%;
-        transition: transform 0.3s;
-    }
-    
-    .Comentario img:hover{
-        transform: scale(1.2);
-    }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+.logo img{
+    height: auto;
+    width: 100px;
+    margin: 100px;
+    object-fit: fill;
+}
 
-    footer{
-        text-align: center;
-    }
+nav ul{
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display:inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3;
+}
+
+nav ul li a:hover{
+ color: var(--cor-secundária)
+}
+
+header{
+    background-color: var(--cor-primaria);
+    color: whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    word-spacing: 150px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro{
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #000dbf, #0f1bc0c4 #212bb8);
+    color: whitesmoke
+}
+
+.intro h1{
+    font-size: 6em;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Comentarios{
+    background-color: whitesmoke;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.Comentario{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.Comentario img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: 50%;
+    transition: transform 0.3s;
+}
+
+.Comentario img:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+h2 {
+    margin-top: 20px;
+    color: var(--cor-primaria);
+}
